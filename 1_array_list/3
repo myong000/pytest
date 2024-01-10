@@ -1,0 +1,20 @@
+def solution(nums):
+    answer = 0
+    tt = 0
+    n = len(nums)
+    for i in range(n):
+        if nums[i] == 1:
+            tt = tt+1
+        else:
+#            if tt > answer:
+#                answer = tt
+            answer = max(answer , tt)
+            tt = 0
+    answer = max(answer , tt)
+
+    return answer
+
+print(solution([1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]))
+print(solution([0, 0, 1, 0, 1, 0, 0]))
+print(solution([1, 1, 1, 1, 1]))
+print(solution([1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1]))

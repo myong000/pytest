@@ -1,0 +1,21 @@
+from collections import deque
+
+arr=[]
+list=[]
+x=input("숫자 몇개? : ")
+n=int(x)
+answer=1
+
+for i in range(n):
+    num=input("숫자 입력 : ")
+    arr.append(num)
+
+print(arr)
+
+for i in reversed (range(n)):   
+        if arr[n-1] < arr[i]:
+           if arr[i-1] > arr[i]:
+                answer=answer+1
+      
+print(answer)
+
