@@ -8,7 +8,7 @@ def solution(nums):
             answer = i
     
     return answer
-    return answer
+
 print(solution([7, 10, 5, 3, 2, 15, 19]))
 print(solution([-12, 12, 30, -15, -5, 3, 9, -11, 14]))
 print(solution([17, 11, 5, 8, 23, 29, 19, 12, 25, 16, 2]))

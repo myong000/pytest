@@ -11,10 +11,11 @@ for i in range(n):
     arr.append(num)
 
 print(arr)
+a=arr[n-1]
 
 for i in reversed (range(n)):   
-        if arr[n-1] < arr[i]:
-           if arr[i-1] > arr[i]:
+        if a < arr[i]:          
+           if arr[-(i-n)] > arr[i]:
                 answer=answer+1
       
 print(answer)

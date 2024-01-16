@@ -1,0 +1,17 @@
+from collections import defaultdict, Counter
+def solution(participant, completion):
+    answer = ''
+    
+    return answer
+    
+
+
+n = int(input())
+a = []
+for i in range(n):
+    a.append(input())
+b = []
+for i in range(n-1):
+    b.append(input())
+print(solution(a, b))
+
